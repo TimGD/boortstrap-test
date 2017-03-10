@@ -22,3 +22,22 @@ li.alert{
 .contentAdd{
 	margin-top: 15px;
 }
+.tabTitle{
+	margin: 20px 0;
+	
+}
+.tabTitle .bg-info{
+	padding: 18px;
+	font-size: 13px;
+	margin: 10px 10px 0 0;
+	border-radius: .4em;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+.tabTitle span{
+	font-size: 19px;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+}
