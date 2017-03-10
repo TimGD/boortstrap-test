@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>标签管理</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/commed.css">
+	
+</head>
+<body>
+	
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- button使用collapse后无法在窗口缩小时出现 -->
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../index.html" class="navbar-brand">Admin</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-1">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>后台管理</a></li>
+					<li><a href="./user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+					<li><a href="./content-1.html"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+					<li class="active"><a href="javascript:void(0)"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+				</ul>	
+				<!-- 用户下拉 -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前台首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> 账户中心</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="page-header">
+			<h3>TGA标签管理</h3>
+		</div>
+		
+		<form>
+			<div class="form-group">
+				<label></label>
+				<input type="text" name="tag" class="form-control" placeholder="请输入要添加的标签">
+				<button type="sumbit" class="btn btn-default">添加</button>
+			</div>
+		</form>
+		<ul>
+			<li class="alert d9edf7">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aira-hidden="true">&times;</span></button>
+				<div class="panel-body">前端技术</div>
+			</li>
+			<li class="alert d9edf7">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aira-hidden="true">&times;</span></button>
+				<div class="panel-body">Strong</div>
+			</li>
+			<li class="alert d9edf7">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aira-hidden="true">&times;</span></button>
+				<div class="panel-body">web前端技术</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="foot container-fluid">
+		<span>Copyright &copy; 2012-2017 www.baidu.com 粤ICP备13014270号-4</span>
+	</div>
+
+</div>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>

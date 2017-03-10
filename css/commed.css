@@ -1,0 +1,24 @@
+.foot{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-top: 1px solid #dddddd;
+}
+.foot span{
+	font-size: 11px;
+}
+.d9edf7{
+	background: #d9edf7;
+}
+li.alert{
+	list-style: none;
+}
+.user-content{
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-top: 0;
+	margin-bottom: 15px;
+}
+.contentAdd{
+	margin-top: 15px;
+}

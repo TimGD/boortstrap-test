@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/commed.css">
+</head>
+<body>
+	<!-- 头部导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- button使用collapse后无法在窗口缩小时出现 -->
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Admin</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-1">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>后台管理</a></li>
+					<li><a href="./user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+					<li  class="active"><a href="javascript:void(0)"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+					<li><a href="./tag.html"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+				</ul>	
+				<!-- 用户下拉 -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前台首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> 账户中心</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="col-md-2 list-group" >
+			<a href="javascript:void(0)" class="list-group-item active">内容管理</a>
+			<a href="./content-2.html" class="list-group-item">内容添加</a>
+		</div> 
+		<div class="col-md-10">
+			<div class="page-header">
+				<h2>内容管理</h2>
+			</div>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="javascript:void(0)">内容管理</a></li>
+				<li><a href="./content-2.html">内容添加</a></li>
+			</ul>
+			<table id="contentManage1" class="table">
+				<thead>
+					<tr>
+						<th>文章标题</th>
+						<th>发布时间</th>
+						<th>发布作者</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>产品经理常犯的错误</th>
+						<td>2017/3/10</td>
+						<td>小蒋老师</td>
+						<td>
+							<div class="dropdown">
+								<button type="button" id="oprerating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								操作
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="oprerating">
+									<li><a href="#">删除</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>产品经理常犯的错误</th>
+						<td>2017/3/10</td>
+						<td>小蒋老师</td>
+						<td>
+							<div class="dropdown">
+								<button type="button" id="oprerating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								操作
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="oprerating">
+									<li><a href="#">删除</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>产品经理常犯的错误</th>
+						<td>2017/3/10</td>
+						<td>小蒋老师</td>
+						<td>
+							<div class="dropdown">
+								<button type="button" id="oprerating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								操作
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="oprerating">
+									<li><a href="#">删除</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>产品经理常犯的错误</th>
+						<td>2017/3/10</td>
+						<td>小蒋老师</td>
+						<td>
+							<div class="dropdown">
+								<button type="button" id="oprerating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								操作
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="oprerating">
+									<li><a href="#">删除</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>产品经理常犯的错误</th>
+						<td>2017/3/10</td>
+						<td>小蒋老师</td>
+						<td>
+							<div class="dropdown">
+								<button type="button" id="oprerating" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								操作
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="oprerating">
+									<li><a href="#">删除</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<nav aria-label="Page navigetion">
+				<ul class="pagination pull-right">
+					<li>
+						<a href="" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li>
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+
+	<!-- 版权 -->
+	<div class="foot container-fluid">
+		<span>Copyright &copy; 2012-2017 www.baidu.com 粤ICP备13014270号-4</span>
+	</div>
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

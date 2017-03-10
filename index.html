@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>响应式主页</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/commed.css">
+	
+</head>
+<body>
+	
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- button使用collapse后无法在窗口缩小时出现 -->
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Admin</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="javascript:void(0)"><span class="glyphicon glyphicon-home"></span>后台管理</a></li>
+					<li><a href="./html/user.html"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+					<li><a href="html/content-1.html"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+					<li><a href="./html/tag.html"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+				</ul>	
+				<!-- 用户下拉 -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前台首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> 账户中心</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 container">
+				<div class="col-md-12 alert alert-danger" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<strong>网站程序有漏洞</strong>
+					<p>当前版本程序(v1.22)存在严重安全问题，容易造成攻击，请即刻修复！</p>
+					<button type="button" class="btn btn-danger">立即修复</button>
+					<button type="button" class="btn btn-default">稍后处理</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">网页数据统计</div>
+					<div class="panel-body">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>统计项目</th>
+									<th>今日</th>
+									<th>昨日</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>注册会员</th>
+									<td>200</td>
+									<td>400</td>
+								</tr>
+								<tr>
+									<th>登录会员</th>
+									<td>4200</td>
+									<td>5400</td>
+								</tr>
+								<tr>
+									<th>今日发帖</th>
+									<td>1200</td>
+									<td>1400</td>
+								</tr>
+								<tr>
+									<th>转载次数</th>
+									<td>800</td>
+									<td>1000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">网站热帖</div>
+					<div class="list-group">
+						<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list"></span>泛Mooc职业教育，效果和教育为王</a><span class="pull-right">2017-3-9</span></li>
+						<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list"></span>泛Mooc职业教育，效果和教育为王</a><span class="pull-right">2017-3-9</span></li>
+						<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list"></span>泛Mooc职业教育，效果和教育为王</a><span class="pull-right">2017-3-9</span></li>
+						<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list"></span>泛Mooc职业教育，效果和教育为王</a><span class="pull-right">2017-3-9</span></li>
+						<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list"></span>泛Mooc职业教育，效果和教育为王</a><span class="pull-right">2017-3-9</span></li>
+						<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list"></span>泛Mooc职业教育，效果和教育为王</a><span class="pull-right">2017-3-9</span></li>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">今日访客统计</div>
+					<div class="panel-body">
+						<canvas id="canvas" class="col-md-12">
+						</canvas>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">服务器状态</div>
+					<div class="panel-body">
+						<p>内存使用率：40%</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-success progress-bar-striped" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+						</div>
+						<p>数据库使用率：20%</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-info progress-bar-striped" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+						</div>
+						<p>磁盘使用率60%</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-waring progress-bar-striped" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+						</div>
+						<p>CPU使用率80%</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-danger progress-bar-striped" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">团队留言板</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="media alert alert-success">
+									<div class="media-left">
+										<a href="#">
+											<img class="media-object" src="img/a.png">
+										</a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">做大哥</h4>
+										<p>SideBarEnhancements是一款很实用的右键菜单增强插件；在安装该插件前，在Sublime Text左侧FOLDERS栏中点击右键，只有寥寥几个简单的功能；安装了就相当于给其丰了大胸一般。</p>
+									</div>
+								</div>
+								<div class="media alert alert-success">
+									<div class="media-left">
+										<a href="#">
+											<img class="media-object" src="img/b.png">
+										</a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">做大哥</h4>
+										<p>SideBarEnhancements是一款很实用的右键菜单增强插件；在安装该插件前，在Sublime Text左侧FOLDERS栏中点击右键，只有寥寥几个简单的功能；安装了就相当于给其丰了大胸一般。</p>
+									</div>
+								</div>
+								<div class="media alert alert-success">
+									<div class="media-left">
+										<a href="#">
+											<img class="media-object" src="img/a.png">
+										</a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">做大哥</h4>
+										<p>SideBarEnhancements是一款很实用的右键菜单增强插件；在安装该插件前，在Sublime Text左侧FOLDERS栏中点击右键，只有寥寥几个简单的功能；安装了就相当于给其丰了大胸一般。</p>
+									</div>
+								</div>
+								<div class="media alert alert-success">
+									<div class="media-left">
+										<a href="#">
+											<img class="media-object" src="img/b.png">
+										</a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">做大哥</h4>
+										<p>SideBarEnhancements是一款很实用的右键菜单增强插件；在安装该插件前，在Sublime Text左侧FOLDERS栏中点击右键，只有寥寥几个简单的功能；安装了就相当于给其丰了大胸一般。</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<form class="from-control messageB">
+									<label for="messageBoard">留言板内容</label>
+									<textarea id="messageBoard" class="form-control" row="20"></textarea>
+									<button type="button" class="btn btn-default" >提交</button>
+								</form>
+								<div class="panel panel-default">
+									<div class="panel-heading">团队成员手册</div>
+									<div class="panel-body">
+										<ul class="list-group">
+											<li class="list-group-item"><span>站长(李小龙):</span><span class="glyphicon glyphicon-phone"></span><span>1313483838383</span></li>
+											<li class="list-group-item"><span>技术(大牛哥):</span><span class="glyphicon glyphicon-phone"></span><span>1313483838383</span></li>
+											<li class="list-group-item"><span>推广(张二哥):</span><span class="glyphicon glyphicon-phone"></span><span>1313483838383</span></li>
+											<li class="list-group-item"><span>客服(王女士):</span><span class="glyphicon glyphicon-phone"></span><span>1313483838383</span><span class="glyphicon glyphicon-phone-alt"></span><span>028-88888888</span></li>
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+
+	</div>
+	<div class="foot container-fluid">
+		<span>Copyright &copy; 2012-2017 www.baidu.com 粤ICP备13014270号-4</span>
+	</div>
+
+</div>
+<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/Chart.js"></script>
+<script type="text/javascript" src="js/chatrun.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+.alert .btn{
+	margin-top: 10px;
+}
+.glyphicon{
+	margin: 0 5px;
+}
+.media.alert{
+	color: #333333;
+	border-color: #e3e3e3;
+	background: #f5f5f5;
+}
+.media img{
+	width: 62px;
+}
+
+.messageB textarea{
+	height: 112px;
+}
+
+.messageB button{
+	margin: 20px 0;
+}

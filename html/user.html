@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/commed.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.new.css" />
+</head>
+<body>
+<!-- 头部导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- button使用collapse后无法在窗口缩小时出现 -->
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../index.html" class="navbar-brand">Admin</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-1">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span>后台管理</a></li>
+					<li  class="active"><a href="javascript:void(0)"><span class="glyphicon glyphicon-user"></span> 用户管理</a></li>
+					<li><a href="./content-1.html"><span class="glyphicon glyphicon-list-alt"></span> 内容管理</a></li>
+					<li><a href="./tag.html"><span class="glyphicon glyphicon-tags"></span> 标签管理</a></li>
+				</ul>	
+				<!-- 用户下拉 -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> 前台首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人首页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> 账户中心</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> 我的收藏</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+<!-- 主体 -->
+	<div class="container">
+		<div class="col-md-2 list-group" >
+			<a href="#" class="list-group-item active">用户管理</a>
+			<a href="user_seach.html" class="list-group-item ">用户搜索</a>
+			<a href="#" class="list-group-item" data-toggle="modal" data-target="#userModal">用户添加</a>
+		</div> 
+
+		<div class="col-md-10 tab-content">
+			<div class="page-header">
+				<h3>用户管理</h3>
+			</div>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#">用户管理</a></li>
+				<li><a href="./user_seach.html">用户搜索</a></li>
+				<li><a href="javascript:void(0)" data-toggle="modal" data-target="#userModal">用户添加</a></li>
+			</ul>
+			<div class="tab-content">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>用户名</th>
+							<th>邮箱</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>1</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+
+						</tr>
+						<tr>
+							<th>2</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>3</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>4</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>5</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>6</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>7</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>8</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>9</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>10</th>
+							<td>悟空</td>
+							<td>2345324324@163.com</td>
+							<td>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="operate" data-toggle="dropdown" aria-haspopup="true" aria-erpanded="true">
+										操作
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="operate">
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+										<li><a href="#">操作</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<nav aria-label="Page-navigation " >
+			<ul class="pagination pull-right">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>		
+					</a>
+				</li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="modal fade" id="userModal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h3 class="modal-titile" >添加用户</h3>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="userName">用户名</label>
+							<input type="text" name="userName" id="userName" class="form-control" placeholder="请输入用户名">
+						</div>
+						<div class="form-group">
+							<label for="Password">用户名密码</label>
+							<input type="password" name="Password" id="Password" class="form-control" placeholder="请输入密码">
+						</div>
+						<div class="form-group">
+							<label for="confirmPassword">确认密码</label>
+							<input type="password" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="请重新输入密码">
+						</div>
+						<div class="form-group">
+							<label for="Email">用户邮箱</label>
+							<input type="email" name="Email" id="Email" class="form-control" placeholder="请输入邮箱">
+						</div>
+						<div class="form-group">
+							<label for="userGroup">所属用户组</label>
+							<select class="form-control" id="userGroup">
+								<option>限制用户</option>
+								<option>好友</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" type="button">添加</button>
+					<button class="btn btn-default" type="button" data-dismiss="modal">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<!-- 版权 -->
+	<div class="foot container-fluid">
+		<span>Copyright &copy; 2012-2017 www.baidu.com 粤ICP备13014270号-4</span>
+	</div>
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>
